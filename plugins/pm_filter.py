@@ -113,7 +113,7 @@ async def pm_text(bot, message):
     user = message.from_user.first_name
     user_id = message.from_user.id
     if content.startswith("/") or content.startswith("#"): return  # ignore commands and hashtags
-    await message.reply_text("<b>𝑯𝒆𝒚 𝑩𝒓𝒐 𝑱𝒐𝒊𝒏 𝑭𝒐𝒓 𝑨𝒍𝒍. @MYFLiiX !</b>")
+    await message.reply_text("<b>𝑯𝒆𝒚 𝑩𝒓𝒐 𝑱𝒐𝒊𝒏 𝑭𝒐𝒓 𝑨𝒍𝒍. @Scout_Legion !</b>")
     await bot.send_message(
         chat_id=LOG_CHANNEL,
         text=f"<b>#PM_MSG\n\nName : {user}\n\nID : {user_id}\n\nMessage : {content}</b>"
@@ -550,7 +550,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\n@𝒄𝒊𝒏𝒆𝒎𝒂𝒍𝒂.𝒄𝒐𝒎", show_alert=True)
+            await query.answer("𝑰 𝑳𝒊𝒌𝒆 𝒀𝒐𝒖𝒓 𝑺𝒎𝒂𝒓𝒕𝒏𝒆𝒔𝒔, 𝑩𝒖𝒕 𝑫𝒐𝒏'𝒕 𝑩𝒆 𝑶𝒗𝒆𝒓𝒔𝒎𝒂𝒓𝒕 😒\n@Scout_Legion", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -667,7 +667,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/DR_STARNGE')
+            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/King_of_Ghoul')
         ], [
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
@@ -717,10 +717,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
              InlineKeyboardButton('🖊️ ᴡʀɪᴛᴇ 🖊️', callback_data='write')
         ],  [
              InlineKeyboardButton('🌍 ᴄᴏᴜɴᴛʀʏ 🌍', callback_data='country'),
-             InlineKeyboardButton('⚡ ᴅᴇᴘʟᴏʏ ⚡', callback_data='deploy'),
-        ],  [
-             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
-             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1'),
+             InlineKeyboardButton('⚡ Group ⚡', callback_data='Group'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -919,10 +916,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "deploy":
+    elif query.data == "Group":
         buttons = [[
-           InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/KAAL_YT7'),
-           InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/DR_STARNGE')
+           InlineKeyboardButton('Group', url='https://t.me/KAAL_YT7'),
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
@@ -1247,7 +1243,7 @@ async def auto_filter(client, msg, spoll=False):
     )
     btn.insert(2, 
          [
-             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1')
+             InlineKeyboardButton('Habibi come', url='https://t.me/WingsOfFreedomm')
          ]
     )
 
