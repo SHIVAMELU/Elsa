@@ -758,9 +758,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-    elif query.data == "source":
+    elif query.data == "Maker":
         buttons = [[
-            InlineKeyboardButton('ʀᴇᴘᴏ', url='https://t.me/dr_starnge'),
+            InlineKeyboardButton('Maker', url='https://t.me/King_of_Ghoul'),
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -918,7 +918,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "Group":
         buttons = [[
-           InlineKeyboardButton('Group', url='https://t.me/KAAL_YT7'),
+           InlineKeyboardButton('Group', url='https://t.me/WingsOfFreedomm'),
         ], [
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
         ]]
