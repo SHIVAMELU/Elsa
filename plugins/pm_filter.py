@@ -205,7 +205,7 @@ async def next_page(bot, query):
     )
     btn.insert(2, 
          [
-             InlineKeyboardButton('ᴘᴏʀɴ🔞', url='https://t.me/+G_NK1KOuNQAwY2I1')
+             InlineKeyboardButton('Group', url='https://t.me/WingsOfFreedomm')
          ]
     )
     
@@ -635,7 +635,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(f"Hey {query.from_user.first_name}, All files on this page has been sent successfully to your PM !", show_alert=True)
 
     elif query.data == "reqinfo":
-        await query.answer("url='https://telegram.me/+G_NK1KOuNQAwY2I1", show_alert=True)
+        await query.answer("url='https://telegram.me/Scout_Legion", show_alert=True)
 
     elif query.data == "minfo":
         await query.answer("⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\nᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ\n⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯⋯\n\nɢᴏ ᴛᴏ ɢᴏᴏɢʟᴇ ➠ ᴛʏᴘᴇ ᴍᴏᴠɪᴇ ɴᴀᴍᴇ ➠ ᴄᴏᴘʏ ᴄᴏʀʀᴇᴄᴛ ɴᴀᴍᴇ ➠ ᴘᴀꜱᴛᴇ ᴛʜɪꜱ ɢʀᴏᴜᴘ\n\nᴇxᴀᴍᴘʟᴇ : ᴀᴠᴀᴛᴀʀ: ᴛʜᴇ ᴡᴀʏ ᴏғ ᴡᴀᴛᴇʀ\n\n🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)\n\n©️ 𝙼𝚈𝙵𝙻𝚒𝚒𝚇 ⚡️", show_alert=True)
