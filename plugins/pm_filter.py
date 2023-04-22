@@ -517,7 +517,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
-                                    InlineKeyboardButton("🔥 ᴄʜᴀɴɴᴇʟ 🔥", url=(MAIN_CHANNEL))
+                                    InlineKeyboardButton("🔥 ᴄʜᴀɴɴᴇʟ 🔥", url='https://t.me/Scout_Legion')
                                 ]
                             ]
                         )
@@ -670,7 +670,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/King_of_Ghoul')
         ], [
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
          ],[
             InlineKeyboardButton('ʙᴀᴄᴋ ᴛᴏ sᴛᴀʀᴛ', callback_data='surprise')
         ]]
@@ -693,7 +692,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔗 ᴄᴏɴɴᴇᴄᴛ 🔗', callback_data='coct')
         ], [
             InlineKeyboardButton('💎 ᴇxᴛʀᴀ 💎', callback_data='extra'),
-            InlineKeyboardButton('🎵 sᴏɴɢ 🎵', callback_data='song'),
             InlineKeyboardButton('🎤 ᴛᴛs 🎤', callback_data='tts')
         ], [
             InlineKeyboardButton('🎦 ᴠɪᴅᴇᴏ 🎦', callback_data='video'),
@@ -710,7 +708,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
          ], [
              InlineKeyboardButton('📊 ᴡʜᴏɪs 📊', callback_data='whois'),
              InlineKeyboardButton('🔗 ᴜʀʟsʜᴏʀᴛ 🔗', callback_data='urlshort'),
-             InlineKeyboardButton('📝 ғᴏɴᴛ 📝', callback_data='font')
          ], [
              InlineKeyboardButton('🌊 ɢᴛʀᴀɴs 🌊', callback_data='gtrans'),
              InlineKeyboardButton('🏴‍☠️ ᴄᴀʀʙᴏɴ 🏴‍☠️', callback_data='carb'),
